@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubinois news</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex ">
+            <div class="logo">
+                <a onclick="() => {window.location.reload}"> 
+                <b style="font-size: 25px; color: black;">M</b>
+                <b style="font-size: 25px; margin-left: -3px; color: red;">U</b>
+                <b style="font-size: 25px; margin-left: -3px; color: black;">B</b>
+                <b style="font-size: 25px; margin-left: -3px; color: red;">I</b>
+                <b style="font-size: 25px; margin-left: -3px; color: black;">N</b>
+                <b style="font-size: 25px; margin-left: -3px; color: green;">O</b>
+                <b style="font-size: 25px; margin-left: -3px; color: black;">I</b>
+                <b style="font-size: 25px; margin-left: -3px; color: rgb(1, 101, 101);">S</b>
+                </a>
+                news</div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar"> 
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Football">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+   
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 id="news-source" class="news-source">End gedget 26/08/2003</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur laudantium sapiente molestiae cumque porro, beatae illo iusto maiores? Obcaecati quisquam eligendi architecto voluptate ullam laborum laudantium eius eos libero nisi.</p>
+            </div>
+        </div>  
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
